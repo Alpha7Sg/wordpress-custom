@@ -190,6 +190,11 @@
   command: wp plugin update --all --allow-root
   args:
     chdir: "{{ wordpress_root_path }}"
+    
+- name: WordPress | Activate plugins
+  command: wp plugin activate --all --allow-root
+  args:
+    chdir: "{{ wordpress_root_path }}"
 
 - name: WordPress | Set file permissions
   file:

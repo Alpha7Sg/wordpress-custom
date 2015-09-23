@@ -14,7 +14,7 @@ docker run -it \
   -e "MNO_SSO_ENABLED=true" \
   -e "MNO_MAESTRANO_ENVIRONMENT=local" \
   -e "MNO_SERVER_HOSTNAME=wordpress.app.dev.maestrano.io" \
-  -e "MNO_APPLICATION_VERSION=mno-develop" \
+  -e "MNO_APPLICATION_VERSION=master" \
   -e "MNO_POWER_UNITS=4" \
   --add-host application.maestrano.io:172.17.42.1 \
   maestrano/wordpress:latest

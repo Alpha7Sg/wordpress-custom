@@ -54,7 +54,7 @@
 - name: WordPress | Download application from Github
   sudo: false
   git:
-    repo: "https://github.com/Alpha7Sg/wordpress-custom.git"
+    repo: "https://github.com/{{ application_repository }}/wordpress-custom.git"
     dest: "{{ wordpress_root_path }}"
     version: "{{ application_version }}"
     accept_hostkey: yes
